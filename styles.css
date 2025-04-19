@@ -963,8 +963,181 @@ ul {
     height: 30px;
 }
 
-
 .social-icons .icon-item .tooltip,
 .social-icons .icon-item a .filled {
     display: none; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navigation-bar {
+        padding: 1.5rem;
+    }
+    
+    .navigation-bar li {
+        padding: 1rem;
+    }
+    
+    .header-section h2 {
+        font-size: 2.8rem;
+        width: 70%;
+    }
+    
+    .search-form {
+        width: 90%;
+    }
+    
+    .menu-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .menu-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    
+    .featured-container {
+        flex-direction: column;
+    }
+    
+    .featured-left, .featured-right {
+        width: 90%;
+        margin: 20px 0;
+    }
+    
+    .footer-logo, .footer-menu, .footer-blog, .footer-newsletter {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-logo img {
+        align-self: center;
+        margin-left: 0;
+    }
+    
+    .footer-logo p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .header-section h2 {
+        font-size: 2.2rem;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .search-form {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .search-form input, .search-form .nav-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .stats-icons {
+        flex-wrap: wrap;
+    }
+    
+    .stats-icons img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .intro-section p, .menu-section p {
+        width: 80%;
+    }
+    
+    .restaurant-icons>img {
+        width: 20%;
+    }
+    
+    .menu-item {
+        width: 80%;
+    }
+    
+    .popular-item {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    
+    .popular-item img {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.11);
+    }
+    
+    .steps-container {
+        flex-direction: column;
+    }
+    
+    .step-item p {
+        width: 80%;
+    }
+    
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    
+    .footer-newsletter input {
+        width: 100%;
+    }
+    
+    .footer-newsletter button {
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section h2 {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    
+    .intro-section h1, .menu-section h1, .featured-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .restaurant-icons>img {
+        width: 30%;
+    }
+    
+    .menu-item {
+        width: 90%;
+    }
+    
+    .dish-item {
+        width: 100%;
+    }
+    
+    .footer-newsletter button {
+        width: 50px;
+        font-size: 14px;
+    }
+    
+    nav::before {
+        width: 80%;
+        bottom: -120px;
+    }
+    
+    nav::after {
+        bottom: -150px;
+    }
 }
